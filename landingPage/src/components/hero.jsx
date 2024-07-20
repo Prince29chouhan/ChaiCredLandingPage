@@ -12,7 +12,7 @@ const Hero = () => {
       <main className="flex flex-col justify-center items-center text-center flex-grow">
         <h1 className="text-5xl text-white mb-6">Hello Everyone 👋</h1>
         <h2 className="text-4xl text-white mb-8">
-          Catalyst. Invests, Incubates, and Accelerates Networks That Power The Future of Open Societies on Web3.
+          ChainCred. Invests, Incubates, and Accelerates Networks That Power The Future of Open Societies on Web3.
         </h2>
         <div className="flex space-x-6 mb-8">
           <div className="bg-black text-white py-4 px-8 rounded">

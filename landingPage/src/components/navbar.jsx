@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
 <header className="flex justify-between items-center py-4 px-8">
-        <div className="text-white text-2xl font-bold">Catalyst<span className="text-blue-600">.</span></div>
+        <div className="text-white text-2xl font-bold">ChainCred<span className="text-blue-600">.</span></div>
         <nav className="space-x-6 text-white navbar">
           <Link
             to="/" 

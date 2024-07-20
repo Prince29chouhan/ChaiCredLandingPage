@@ -9,7 +9,7 @@ const Foot = () => {
     <footer className="footer" id='footer'>
       <div className="footer-top">
         <div className="footer-logo">
-          <span>Catalyst<span className="dot">.</span></span>
+          <span>ChainCred<span className="dot">.</span></span>
         </div>
         <div className="footer-links">
           <a href="#funds">Funds</a>
