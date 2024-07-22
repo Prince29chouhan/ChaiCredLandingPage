@@ -1,37 +1,48 @@
 // src/CatalystPage.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './hero.css';
 import Navbar from './navbar';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Hero = () => {
 //   const [activeTab, setActiveTab] = useState('home');
+useEffect(()=>{
+    Aos.init({duration:2000});
+}
+
+)
 
   return (
     <div className="container">
       <Navbar />
-      <main className="flex flex-col justify-center items-center text-center flex-grow">
-        <h1 className="text-6xl text-white mb-6 font-semibold font-serif">Hello Everyone 👋</h1>
-        <h2 className="text-4xl text-white mb-8 p-10">
-          ChainCred. Invests, Incubates, and Accelerates Networks That Power The Future of Open Societies on Web3.
-        </h2>
-        <div className="flex space-x-6 mb-8">
-          <div className="bg-black text-white py-4 px-8 rounded">
-            <div>One of our best investments</div>
-            <div className="text-xl mt-2">$50mm realised | 250x MOIC</div>
+      <div className="landing-page flex items-center justify-center min-h-screen">
+      <div className="container mx-auto p-8">
+        <p className="text-[2rem] mb-20 " data-aos = 'fade-right'>Hello Everyone <span role="img" aria-label="wave">👋</span></p>
+        <h1 className="text-[3rem] font-bold mb-20" data-aos="fade-up" data-aos-delay="50">
+          Catalyst<span className="text-blue-500" data-aos="fade-up" data-aos-delay="70">.</span> Invests, Incubates, and <br /><span className='text-gray-300'>Accelerates Networks That Power</span> <br /> <span className='text-gray-400'>The Future of Open Societies on Web3.</span>
+        </h1>
+        <div className="flex space-x-4 mt-6">
+          <div className=" p-4 rounded-lg text-center gray-box">
+            <p className="text-sm text-gray-400">One of our best investments</p>
+            <p className="text-lg font-bold">$50mm realised | 250x MOIC</p>
           </div>
-          <div className="bg-blue-600 text-white py-4 px-8 rounded">
-            <div>Investing since</div>
-            <div className="text-xl mt-2">2017</div>
+          <div className="p-4 rounded-lg text-center blue-box">
+            <p className="text-sm text-gray-200">Investing since</p>
+            <p className="text-lg font-bold">2017</p>
           </div>
         </div>
-      </main>
-      <footer className="text-white text-center py-4">
+      </div>
+    </div>
+      <footer className="text-white text-center mb-20">
         <div className='flex justify-between px-10 mb-5'>
         <p>SCROLL DOWN</p>
         <p>2023</p>
         </div>
-        <hr className='mx-5 mb-5'/>
+        <hr className='mx-5 mb-5' data-aos="fade-down" data-aos-delay="50"/>
       </footer>
+
+      
     </div>
   );
 }

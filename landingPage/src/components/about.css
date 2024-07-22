@@ -1,8 +1,6 @@
 /* src/ApplyPage.css */
 .apply-container {
-    background: linear-gradient(120deg, rgba(10, 10, 10, 1) 0%, rgba(34, 34, 34, 1) 100%);
     min-height: 100vh;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     padding: 50px;
@@ -39,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Added to allow wrapping */
   }
   
   .apply-text {
@@ -82,12 +81,9 @@
     transition: background 0.3s ease;
   }
   
-
-  
   .apply-button.active {
     background: #0070f3;
   }
-
   
   .number {
     font-size: 1.5rem;
@@ -110,8 +106,100 @@
   
   .apply-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     height: auto;
     border-radius: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .glass-effect {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .apply-text {
+      padding-right: 0;
+      max-width: 100%;
+    }
+  
+    .apply-image {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .apply-heading {
+      font-size: 1.75rem;
+    }
+  
+    .apply-subheading {
+      font-size: 1.25rem;
+    }
+  
+    .apply-paragraph {
+      font-size: 0.875rem;
+    }
+  
+    .apply-button {
+      padding: 0.75rem 1.5rem;
+    }
+  
+    .number {
+      font-size: 1.25rem;
+    }
+  
+    .role {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.75rem;
+    }
+  
+    .arrow {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .apply-container {
+      padding: 20px;
+    }
+  
+    .glass-effect {
+      padding: 4%;
+    }
+  
+    .apply-heading {
+      font-size: 1.5rem;
+    }
+  
+    .apply-subheading {
+      font-size: 1rem;
+    }
+  
+    .apply-paragraph {
+      font-size: 0.75rem;
+    }
+  
+    .apply-button {
+      padding: 0.5rem 1rem;
+    }
+  
+    .number {
+      font-size: 1rem;
+    }
+  
+    .role {
+      font-size: 1.25rem;
+    }
+  
+    .description {
+      font-size: 0.625rem;
+    }
+  
+    .arrow {
+      font-size: 1rem;
+    }
   }
   

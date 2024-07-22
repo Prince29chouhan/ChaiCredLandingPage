@@ -7,6 +7,7 @@ import Join from './components/join';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Home from './components/home/home';
+import TestimonialComponent from './components/testimonial';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/hero" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/testimonial" element={<TestimonialComponent />} />
         <Route path="/team" element={<TeamSection />} />
         <Route path="/join" element={<Join />} />
       </Routes>

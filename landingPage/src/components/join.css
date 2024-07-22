@@ -3,10 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 48, 48, 0.9)); /* Adjust the path to your actual image */
-    background-size: contain; /* Ensures the image doesn't stretch */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: right; /* Aligns the image to the left */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 48, 48, 0.9)); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: right; 
     color: #ffffff;
     height: 100vh;
   }
