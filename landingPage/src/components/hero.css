@@ -7,7 +7,7 @@
     position: relative;
     width: fit-content;
     overflow: hidden;
-    min-width: 99vw;
+    min-width: 98.82vw;
   }
   
   .container::before {

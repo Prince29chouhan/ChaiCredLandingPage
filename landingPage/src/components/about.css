@@ -87,11 +87,7 @@
   .apply-button.active {
     background: #0070f3;
   }
-  
-  .apply-button div {
-    display: flex;
-    flex-direction: column;
-  }
+
   
   .number {
     font-size: 1.5rem;
@@ -99,7 +95,7 @@
   }
   
   .role {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 0.25rem;
   }
   

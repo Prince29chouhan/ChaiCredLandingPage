@@ -6,8 +6,8 @@ function Navbar() {
     const [activeTab, setActiveTab] = useState('home');
     const [menu, setMenu] = useState("home");
   return (
-    <div>
-<header className="flex justify-between items-center py-4 px-8">
+    <div className='navbar'>
+<header className="flex justify-between items-center py-4 px-8 sticky">
         <div className="text-white text-2xl font-bold">ChainCred<span className="text-blue-600">.</span></div>
         <nav className="space-x-6 text-white navbar">
           <Link
@@ -30,13 +30,6 @@ function Navbar() {
             onClick={() => setActiveTab('labs')}
           >
             Labs
-          </a>
-          <a 
-            href="#accelerator" 
-            className={`nav-link ${activeTab === 'accelerator' ? 'active' : ''}`}
-            onClick={() => setActiveTab('accelerator')}
-          >
-            Accelerator
           </a>
           <a 
             href="#team" 

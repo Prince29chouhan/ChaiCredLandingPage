@@ -79,3 +79,16 @@
 .footer-social i {
   font-size: 1.2rem;
 }
+
+
+.nav-link {
+  /* text-white; */
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  background-color: #085bea; /* Using a darker shade to highlight the active link */
+  color: white;
+ 
+}

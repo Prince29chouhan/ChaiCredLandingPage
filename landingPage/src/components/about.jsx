@@ -24,9 +24,9 @@ const About = () => {
               <button  href="#found" 
               className={`nav-link apply-button found ${activeTab === 'found' ? 'active' : ''}`}
             onClick={() => setActiveTab('found')}>
-                <div>
+                <div className='flex flex-col justify-center'>
                   <span className="number">01</span>
-                  <span className="role">Founders</span>
+                  <span className="role font-bold">Founders</span>
                   <span className="description">Apply to co-founder with Catalyst</span>
                 </div>
                 <span className="arrow">&#10142;</span>
@@ -35,9 +35,9 @@ const About = () => {
               href="#investor" 
               className={`nav-link apply-button inv ${activeTab === 'investor' ? 'active' : ''}`}
             onClick={() => setActiveTab('investor')}>
-                <div>
-                  <span className="number">02</span>
-                  <span className="role">Investors</span>
+                <div className='flex flex-col justify-center'>
+                  <span className="number text-center">02</span>
+                  <span className="role font-bold text-center">Investors</span>
                   <span className="description">Apply to co-invest with Catalyst</span>
                 </div>
                 <span className="arrow">&#10142;</span>

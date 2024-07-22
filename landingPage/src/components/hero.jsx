@@ -10,8 +10,8 @@ const Hero = () => {
     <div className="container">
       <Navbar />
       <main className="flex flex-col justify-center items-center text-center flex-grow">
-        <h1 className="text-5xl text-white mb-6">Hello Everyone 👋</h1>
-        <h2 className="text-4xl text-white mb-8">
+        <h1 className="text-6xl text-white mb-6 font-semibold font-serif">Hello Everyone 👋</h1>
+        <h2 className="text-4xl text-white mb-8 p-10">
           ChainCred. Invests, Incubates, and Accelerates Networks That Power The Future of Open Societies on Web3.
         </h2>
         <div className="flex space-x-6 mb-8">
@@ -26,8 +26,11 @@ const Hero = () => {
         </div>
       </main>
       <footer className="text-white text-center py-4">
+        <div className='flex justify-between px-10 mb-5'>
         <p>SCROLL DOWN</p>
         <p>2023</p>
+        </div>
+        <hr className='mx-5 mb-5'/>
       </footer>
     </div>
   );

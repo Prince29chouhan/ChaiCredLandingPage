@@ -1,3 +1,7 @@
+.navbar{
+    position: sticky;
+}
+
 header, main, footer {
     position: relative;
     z-index: 1;
@@ -19,6 +23,3 @@ header, main, footer {
    
   }
   
-  .navbar{
-    position: sticky;
-  }
