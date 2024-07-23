@@ -12,7 +12,7 @@ const Join = () => {
         <button className="cta-button" data-aos="fade-down" data-aos-delay="150">Let's Join Now</button>
       </div>
       <div className="map-container">
-        <div className="map">
+        <div className="map " data-aos="fade-down" data-aos-delay="150">
           <div className="location">
             <span className="label">Catalyst Core Accelerator</span>
             <div className="pin"></div>

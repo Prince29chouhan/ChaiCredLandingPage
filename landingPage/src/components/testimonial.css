@@ -2,25 +2,32 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 3%;
 }
 
 .testimonial-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-card {
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1rem rgba(255, 255, 255, 1);
   border-radius: 8px;
-  padding: 20px;
+  padding: 4%;
   margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1; 
   position: relative;
   overflow: visible; /* Allow overflow for the triangular cutout */
 }
 
 .testimonial-text {
-  margin-bottom: 40px; /* Adjust to make room for the cutout */
+  margin-bottom: 1rem;
   position: relative;
   z-index: 1;
 }
@@ -34,8 +41,9 @@
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: -80px;
-  left: 40px; 
+  bottom: -18%; /* Adjust this to ensure the profile section is at the correct position */
+  left: 5%;
+  transform: translateX(-50%);
 }
 
 .profile-image {
@@ -44,7 +52,6 @@
   border-radius: 50%;
   overflow: hidden;
   margin-right: 20px;
-  margin-top: 3000px;
 }
 
 .profile-image img {
@@ -53,19 +60,15 @@
   object-fit: cover;
 }
 
-.testimonial-info {
-  margin-left: 10px; /* Adjust this value to position the text properly */
-}
-
 .testimonial-info h1 {
   margin: 0;
-  color: #ffffff;
+  color: #f7f3f3;
   font-size: 1.5rem;
 }
 
 .testimonial-info p {
   margin: 0;
-  color: #5d5d6f;
+  color: #858590;
   font-size: 1.2rem;
 }
 
@@ -73,7 +76,8 @@
   content: '';
   position: absolute;
   bottom: -20px; /* Adjust to match the image position */
-  left: 50px; /* Adjust to match the image position */
+  left: 10%;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 20px solid transparent;

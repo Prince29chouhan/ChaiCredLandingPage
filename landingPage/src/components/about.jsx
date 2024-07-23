@@ -24,7 +24,7 @@ const About = () => {
                   Apply Now for Investor or Founders
                 </h4>
                 <p className="apply-paragraph" data-aos="fade-down" data-aos-delay="250">
-                  Catalyst brings ideas, capital, operational resources, and
+                  ChainCred brings ideas, capital, operational resources, and
                   talent together. We partner with founders to transform the
                   best ideas into groundbreaking protocols.
                 </p>
@@ -41,7 +41,7 @@ const About = () => {
                     <span className="number">01</span>
                     <span className="role font-bold">Founders</span>
                     <span className="description">
-                      Apply to co-founder with Catalyst
+                      Apply to co-founder with ChaiCred
                     </span>
                   </div>
                   <span className="arrow">&#10142;</span>
@@ -59,7 +59,7 @@ const About = () => {
                       Investors
                     </span>
                     <span className="description">
-                      Apply to co-invest with Catalyst
+                      Apply to co-invest with ChainCred
                     </span>
                   </div>
                   <span className="arrow">&#10142;</span>
